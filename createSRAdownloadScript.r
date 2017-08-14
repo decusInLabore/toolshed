@@ -2,7 +2,7 @@
 ## Function: (32) createSRAdownloadScript()                                       ##
 createSRAdownloadScript <- function(
     sra.id.vector = "SRP014185",
-    module.load.cmd = "module use /camp/stp/babs/working/software/modules/all;module load sratoolkit/2.8.2-1",
+    module.load.cmd = "module use /module/path/all;module load sratoolkit/2.8.2-1",
     fastqDir = "path/to/fastq/dir"
 ){
     sink(paste0(sra.id.vector, ".sra.download.instructions.sh"))
